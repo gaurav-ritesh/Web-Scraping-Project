@@ -1,19 +1,37 @@
 # Web Scraping Project
 
-This project demonstrates web scraping using Python to extract article titles and URLs from a website. It utilizes the `requests` library for sending HTTP requests and `BeautifulSoup` for parsing and extracting relevant data from HTML.
+## Overview
+This project is a **Python-based web scraper** designed to extract product details from e-commerce websites using `BeautifulSoup` and `Requests`. The scraped data is saved in a CSV file for further analysis and insights.
 
 ## Features
-
-- **Data Extraction**: Extracts article titles and URLs from a website.
-- **HTML Parsing**: Efficiently parses HTML content using BeautifulSoup.
-- **Error Handling**: Handles potential errors (e.g., network issues) to ensure script reliability.
-- **Scalable**: Designed to scale for different websites with minimal adjustments.
+1. **Efficient Data Extraction** – Scrapes product **title, price, and link** from an e-commerce site.
+2. **CSV Storage** – Saves extracted data in a structured CSV format.
+3. **User-Agent Handling** – Avoids basic bot detection by sending appropriate headers.
+4. **Scalability** – Supports future enhancements like pagination and multiple site scraping.
+5. **Automation Potential** – Can be scheduled for periodic data collection for price tracking.
 
 ## Installation
-
 ### Prerequisites
-
-Make sure you have Python 3.6+ installed on your system. You'll also need to install the required libraries:
-
-```bash
+Ensure you have **Python 3.x** installed along with the required dependencies.
+```sh
 pip install requests beautifulsoup4
+```
+
+## Usage
+1. Clone this repository:
+```sh
+git clone https://github.com/your-username/web-scraping-project.git
+cd web-scraping-project
+```
+2. Edit the `url` variable inside `scraper.py` with the target website.
+3. Run the script:
+```sh
+python scraper.py
+```
+4. The extracted data will be saved as `products.csv`.
+
+## Contributing
+Feel free to fork the repo and submit pull requests for improvements!
+
+## License
+This project is licensed under the **MIT License**.
